@@ -98,7 +98,6 @@ const Box1 = styled.div`
   width: 100%;
   height: 100px;
   margin: 30px 0px;
-  border: 1px solid black;
 `;
 
 const Input = styled.input`
@@ -112,6 +111,10 @@ const Input = styled.input`
     outline: none;
     border-bottom: 3px solid white;
   }
+  /* 반응형 */
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
 `;
 
 const AddBtn = styled.button`
@@ -119,6 +122,11 @@ const AddBtn = styled.button`
   height: 50px;
   border: 3px double white;
   border-radius: 5px;
+  /* 반응형 */
+  @media screen and (max-width: 1200px) {
+    width: 60px;
+    height: 40px;
+  }
 `;
 
 const Box2 = styled.div`

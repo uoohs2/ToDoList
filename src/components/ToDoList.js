@@ -60,8 +60,10 @@ const Div = styled.div`
   justify-content: center;
   width: 100%;
   margin: 10px 0px;
-  padding: 0px 50px;
-  border: 1px solid black;
+  /* 반응형 */
+  @media screen and (max-width: 1200px) {
+    justify-content: space-between;
+  }
 `;
 
 const Num = styled.p`
@@ -69,15 +71,24 @@ const Num = styled.p`
   height: 30px;
   line-height: 30px;
   margin-right: 10px;
-  border: 1px solid black;
+  /* 반응형 */
+  @media screen and (max-width: 1200px) {
+    width: 30px;
+  }
 `;
 
 const Text = styled.p`
   width: 50%;
   line-height: 30px;
-  border: 1px solid black;
   white-space: normal;
   word-wrap: break-word;
+  /* 반응형 */
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 40%;
+  }
 `;
 
 const EditText = styled.input`
@@ -90,17 +101,22 @@ const EditText = styled.input`
   :focus {
     outline: 1px solid white;
   }
+  /* 반응형 */
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 40%;
+  }
 `;
 
 const EditBtn = styled.button`
   width: 50px;
   height: 30px;
   margin: 0px 10px;
-  border: 1px solid black;
 `;
 
 const DeleteBtn = styled.button`
   width: 50px;
   height: 30px;
-  border: 1px solid black;
 `;

@@ -47,11 +47,11 @@ const Text = styled.h1`
 `;
 
 const Btn = styled.button`
-  width: 350px;
-  height: 100px;
+  width: 300px;
+  height: 80px;
   margin: 50px 0px;
   border: 2px solid white;
   border-radius: 50px;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
 `;
