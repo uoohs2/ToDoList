@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# 사이트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+http://inburst.shop.s3-website-us-east-1.amazonaws.com
 
-## Available Scripts
+# React
 
-In the project directory, you can run:
+리액트란 컴포넌트 단위로 이루어진 UI 라이브러리입니다.
+리액트 컴포넌트를 선언하는 방식으로 클래스형과 함수형 2가지가 있습니다.
+클래스형은 state, lifeCycle 관련 기능사용이 가능하고, 함수형은 state, lifeCycle 관련 기능사용이 불가능했는데 Hook을 통해 해결할 수 있게 되었습니다.
 
-### `yarn start`
+lifeCycle이란 컴포넌트가 렌더링을 준비하는 순간부터, 페이지에서 사라질 때까지를 말합니다.
+클래스형에 lifeCycle Method는 크게 총 3가지 마운트, 업데이트, 언마운트로 나뉩니다. 
+마운트는 DOM이 생성되고 웹 브라우저상에 나타내는 것입니다. 그리고 업데이트는 컴포넌트에서 props가 바뀔 때, state가 바뀔 때, 부모 컴포넌트 리렌더링 때, this.forceUpdate로 강제 렌더링할 때 업데이트합니다. 마지막으로 언마운트는 컴포넌트를 DOM에서 제거하는 것입니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 상태관리
+상태는 웹페이지내에서 눈에 보이는 데이터들(ex. 메뉴, 게시글 제목, 게시글 내용)뿐만 아니라 서버와 주고 받아야하는 데이터를 말합니다.
+이렇게 눈에 보이는 것과 눈에 보이지 않는 모든 것을 상태라고 하고 이를 관리하는 것을 상태 관리라고 합니다.
+서로 다른 컴포넌트에 같은 데이터가 필요하다고 할 때, 각 컴포넌트가 부모자식 관계로 되어있지 않은 이상, 각 컴포넌트 간의 직접적인 데이터 전달은 어렵다. 데이터를 부모 컴포넌트로 보내고, 다시 그 상태데이터 필요한 컴포넌트로 전달해야합니다. 하지만 이렇게 Prop Drilling이 많아지면 이 prop이 어디에서 왔는지 확인하기 정말 어려워지기 때문에 상태관리가 필요합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
